@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Push Docker image') {
             steps {
-                sh 'docker login --username=test --password=test'
+                sh 'docker login --username=fabricio211 --password=megatron12'
                 sh './gradlew dockerPush'
             }
         }
